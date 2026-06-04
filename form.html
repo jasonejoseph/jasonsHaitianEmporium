@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Form - Jason's Haitian Emporium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Customer Registration Form</h1>
+
+```
+<nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="products.html">Products</a>
+    <a href="form.html">Customer Information</a>
+</nav>
+```
+
+</header>
+
+<main>
+
+<section>
+
+<h2>Customer Information</h2>
+
+<form>
+
+<label for="fullname">Full Name:</label><br> <input type="text" id="fullname" name="fullname" required><br><br>
+
+<label for="email">Email Address:</label><br> <input type="email" id="email" name="email" required><br><br>
+
+<label for="phone">Phone Number:</label><br> <input type="tel" id="phone" name="phone"><br><br>
+
+<label for="password">Create Password:</label><br> <input type="password" id="password" name="password"><br><br>
+
+<label for="favorite">Favorite Product Category:</label><br>
+
+<input list="categories" name="favorite" id="favorite">
+
+<datalist id="categories">
+    <option value="Drinks">
+    <option value="Snacks">
+    <option value="Platters">
+</datalist>
+
+<br><br>
+
+<label for="comments">Suggestions:</label><br>
+
+<textarea id="comments" rows="5" cols="40"></textarea>
+
+<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</section>
+
+</main>
+
+</body>
+</html>
