@@ -1,8 +1,6 @@
 const customers = [];
 
-const form = document.getElementById("customerForm");
-
-form.addEventListener("submit", function(event) {
+document.getElementById("customerForm") .addEventListener("submit", function(event) {
 
     event.preventDefault();
 
@@ -11,25 +9,19 @@ form.addEventListener("submit", function(event) {
         id: Date.now(),
 
         name: document.getElementById("fullname").value,
-
         email: document.getElementById("email").value,
-
         phone: document.getElementById("phone").value,
-
         favoriteCategory:
             document.getElementById("favorite").value
     };
 
     customers.push(customer);
 
-    const customerList = document.getElementById("customerList");
-
-const newCustomer = document.createElement("li");
-
-newCustomer.textContent =
-    customer.name + " - " + customer.email;
-
-customerList.appendChild(newCustomer);
+        const customerList = document.getElementById("customerList");
+        const newCustomer = document.createElement("li");
+        newCustomer.textContent =
+            customer.name + " - " + customer.email;
+        customerList.appendChild(newCustomer);
 
     console.clear();
 
