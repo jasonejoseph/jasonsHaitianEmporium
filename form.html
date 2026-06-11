@@ -32,6 +32,8 @@
 
 <form>
 
+<form id="customerForm"></form>
+
 <label for="fullname">Full Name:</label><br> <input type="text" id="fullname" name="fullname" required><br><br>
 
 <label for="email">Email Address:</label><br> <input type="email" id="email" name="email" required><br><br>
@@ -58,13 +60,24 @@
 
 <br><br>
 
-<input type="submit" value="Submit">
+<!-- <input type="submit" value="Submit"> -->
+
+<button type="submit" id="submitBtn">
+    Submit
+
+</button>
 
 </form>
+
+<h3>Registered Customers</h3>
+
+<ul id="customerList"></ul>
 
 </section>
 
 </main>
+
+<script src="script.js"></script>
 
 </body>
 </html>
